@@ -1,0 +1,35 @@
+{
+  "todos": [
+    {
+      "id": "5550a88a-50ca-448f-bbb0-c1480ee81f23",
+      "date": "2023-03-27T00:07:51.718Z",
+      "content": "Primeira TODO",
+      "done": false
+    },
+    {
+      "id": "ae800f92-2993-4278-9b1c-917da9c459b7",
+      "date": "2023-03-27T00:07:51.718Z",
+      "content": "Atualizada!",
+      "done": false
+    },
+    {
+      "id": "be800f92-2993-4278-9b1c-917da9c459b7",
+      "date": "2023-03-27T00:07:51.718Z",
+      "content": "Ir ao parque",
+      "done": false
+    },
+    {
+      "id": "br800f92-2993-4278-9b1c-917da9c459b7",
+      "date": "2023-03-27T00:07:51.718Z",
+      "content": "Passear com a doguinha",
+      "done": false
+    },
+    {
+      "id": "007be0c5-d94d-4656-b9d0-d78db27c9895",
+      "date": "2023-07-03T13:58:24.620Z",
+      "content": "Test todo",
+      "done": false
+    }
+  ],
+  "dogs": []
+}
