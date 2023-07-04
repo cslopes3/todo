@@ -17,7 +17,7 @@ function get({
   return fetch(`/api/todos?page=${page}&limit=${limit}`).then(
     async (respostaDoServidor) => {
       const todosString = await respostaDoServidor.text();
-      // Como garantir a tipagem de tipos desconhecidos?
+
       const responseParsed = parseTodosFromServer(JSON.parse(todosString));
 
       return {
@@ -98,14 +98,6 @@ export const todoRepository = {
   deleteById,
 };
 
-// Model/Schema
-// interface Todo {
-//   id: string;
-//   content: string;
-//   date: Date;
-//   done: boolean;
-// }
-
 function parseTodosFromServer(responseBody: unknown): {
   total: number;
   pages: number;
@@ -133,6 +125,7 @@ function parseTodosFromServer(responseBody: unknown): {
           date: string;
           done: string;
         };
+
         return {
           id,
           content,
