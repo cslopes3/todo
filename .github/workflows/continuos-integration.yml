@@ -1,5 +1,8 @@
 name: "[CI] Continuos Integration"
-on: [push]
+on:
+  pull_request:
+    types: [opened, synchronize]
+
 jobs:
   lint:
     runs-on: ubuntu-latest
