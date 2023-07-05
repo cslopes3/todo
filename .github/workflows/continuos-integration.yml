@@ -27,6 +27,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
+          context: ./Docker
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo:latest
   # test:
